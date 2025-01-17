@@ -1,7 +1,7 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
-import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
+import { toSellOrNotToSell} from "./PotteryCatalog.js";
 import { PotteryList } from "./PotteryList.js";
 
 
@@ -32,11 +32,11 @@ for (const pottery of testArr) {
     console.log(pottery);
 }
 
-console.log(usePottery());
+// console.log(usePottery());
 
 // Invoke the component function that renders the HTML list
 const potteryListElement = document.getElementById('potteryList');
 
 if (potteryListElement) {
-    potteryListElement.innerHTML = PotteryList(usePottery());
+    potteryListElement.innerHTML = PotteryList();
 }

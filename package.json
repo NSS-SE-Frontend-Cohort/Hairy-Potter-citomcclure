@@ -23,9 +23,13 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "@types/ungap__structured-clone": "^1.2.0",
     "babel-jest": "^25.3.0",
     "jest": "^25.3.0",
     "puppeteer": "^3.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@ungap/structured-clone": "^1.2.1"
+  }
 }
