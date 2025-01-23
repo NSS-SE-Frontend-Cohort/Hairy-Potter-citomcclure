@@ -6,18 +6,18 @@ import { PotteryList } from "./PotteryList.js";
 
 
 // Make 5 pieces of pottery at the wheel
-let mug1 = makePottery("mug", 3, 4);
-let mug2 = makePottery("mug", 8, 2);
+let mug1 = makePottery("mug1", 3, 4);
+let mug2 = makePottery("mug2", 8, 2);
 let platter = makePottery("platter", 20, 1);
 let vase = makePottery("vase", 30, 18);
 let bowl = makePottery("bowl", 5, 3);
 
 // Fire each piece of pottery in the kiln
-firePottery(mug1, 1000);
-firePottery(mug2, 3000);
-firePottery(platter, 2000);
-firePottery(vase, 2200);
-firePottery(bowl, 2201);
+mug1 = firePottery(mug1, 1000);
+mug2 = firePottery(mug2, 3000);
+platter = firePottery(platter, 2000);
+vase = firePottery(vase, 2200);
+bowl = firePottery(bowl, 2201);
 
 // Determine which ones should be sold, and their price
 const testArr = [];
